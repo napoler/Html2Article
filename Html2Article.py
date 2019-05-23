@@ -70,7 +70,7 @@ def html2Article(html_file):
     for oneLine in string_data:
         #if len(oneLine) >= summ/count+180:
         if len(oneLine) >= 180:
-            print oneLine
+            print (oneLine)
             result_data.append(oneLine)
 
     #画图部分
