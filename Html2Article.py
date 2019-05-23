@@ -83,11 +83,11 @@ def html2Article(html_file):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print "Usage: python Html2Article.py <article's address>"
+        print ("Usage: python Html2Article.py <article's address>")
         exit(-1)
     try:
         html_data = get_html(sys.argv[1])
     except Exception as e:
-        print "Failed to get article by network, details:\n" + str(e)
+        print ("Failed to get article by network, details:\n" + str(e))
         exit(-2)
     html2Article(html_data)
